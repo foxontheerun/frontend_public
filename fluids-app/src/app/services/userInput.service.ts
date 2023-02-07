@@ -10,7 +10,6 @@ export interface LimitValues {
 @Injectable({ providedIn: 'root' })
 export class UserInputService {
 
-  
   public minAcceptableValue: number = minAcceptableValue;
   public maxAcceptableValue: number = maxAcceptableValue;
 
@@ -26,7 +25,6 @@ export class UserInputService {
       this.setValues();
     } 
   }
-
 
   getBoundaryValue(inputValueMessage: string) {
     let boundaryValueInput = prompt(inputValueMessage);
